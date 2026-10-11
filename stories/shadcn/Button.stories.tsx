@@ -1,4 +1,4 @@
-
+//app/stories/shadcn/Button.stories.ts
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { Button } from "@/components/ui/button";
 
@@ -44,7 +44,7 @@ export const Outline: Story = {
 export const Destructive: Story = {
   args: {
     variant: "destructive",
-    children: "Delete item",
+    children: <span className="font-inter">Delete item</span>,
   },
 };
 

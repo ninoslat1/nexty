@@ -1,8 +1,16 @@
+//.storybook/preview.ts
 import type { Preview } from "@storybook/nextjs-vite";
 
 import "../app/globals.css";
 
 const preview: Preview = {
+  decorators: [
+    (Story) => (
+      <div className="font-inter">
+        <Story/>
+      </div>
+    )
+  ],
   parameters: {
     controls: {
       matchers: {
